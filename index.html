@@ -146,60 +146,128 @@
          2. HERO SECTION
          ══════════════════════════════════ -->
     <section class="hero" aria-labelledby="hero-headline">
-      <div class="hero-pizza-pattern" aria-hidden="true"></div>
-      <div class="hero-overlay" aria-hidden="true"></div>
+      <!-- Decorative background layer -->
+      <div class="hero-bg" aria-hidden="true">
+        <span class="bg-blob blob-1"></span>
+        <span class="bg-blob blob-2"></span>
+        <span class="bg-blob blob-3"></span>
+        <span class="bg-doodle doodle-1">🍅</span>
+        <span class="bg-doodle doodle-2">🧀</span>
+        <span class="bg-doodle doodle-3">🌿</span>
+        <span class="bg-doodle doodle-4">✨</span>
+      </div>
 
       <div class="container hero-inner reveal">
-        <div class="hero-badge">
-          <span class="badge-open-dot" aria-hidden="true"></span>
-          Open today: <strong>10:00 AM – 10:00 PM</strong>
-        </div>
-
-        <h1 id="hero-headline" class="hero-headline">
-          Stone-Fired Pizza,<br/>
-          <span class="headline-accent">Crafted with Passion</span>
-        </h1>
-
-        <p class="hero-subheadline">
-          Handcrafted pizzas baked in a stone oven — crispy base, rich sauce,
-          and toppings loaded with love. Right here in Faridabad.
-        </p>
-
-        <div class="rating-badge" role="img" aria-label="Rated 4.4 out of 5 based on 58 ratings">
-          <div class="stars" aria-hidden="true">
-            <span class="star filled">★</span><span class="star filled">★</span>
-            <span class="star filled">★</span><span class="star filled">★</span>
-            <span class="star half">★</span>
+        <!-- LEFT — Copy -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-open-dot" aria-hidden="true"></span>
+            Open today: <strong>10:00 AM – 10:00 PM</strong>
           </div>
-          <span class="rating-value">4.4</span>
-          <span class="rating-sep">/</span>
-          <span class="rating-max">5</span>
-          <span class="rating-count">(58 ratings)</span>
+
+          <h1 id="hero-headline" class="hero-headline">
+            Stone-Fired Pizza,
+            <span class="headline-accent">
+              Crafted with
+              <span class="accent-word">Passion
+                <svg class="scribble" viewBox="0 0 220 16" preserveAspectRatio="none" aria-hidden="true">
+                  <path d="M4 11 C 40 3, 80 13, 116 8 S 190 4, 216 9" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </span>
+          </h1>
+
+          <p class="hero-subheadline">
+            Handcrafted pizzas baked in a stone oven — crispy base, rich sauce,
+            and toppings loaded with love. Right here in Faridabad.
+          </p>
+
+          <div class="hero-meta-row">
+            <div class="rating-badge" role="img" aria-label="Rated 4.4 out of 5 based on 58 ratings">
+              <div class="stars" aria-hidden="true">
+                <span class="star filled">★</span><span class="star filled">★</span>
+                <span class="star filled">★</span><span class="star filled">★</span>
+                <span class="star half">★</span>
+              </div>
+              <span class="rating-value">4.4</span>
+              <span class="rating-sep">/</span>
+              <span class="rating-max">5</span>
+              <span class="rating-count">(58 ratings)</span>
+            </div>
+            <div class="since-badge">
+              <span aria-hidden="true">🏆</span> Since 2020
+            </div>
+          </div>
+
+          <div class="hero-ctas">
+            <a href="#" id="hero-call-btn" class="btn btn-primary btn-lg"
+               aria-label="Call The Pizza Shop">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z"/>
+              </svg>
+              Call Now
+            </a>
+            <a href="#" id="hero-wa-btn" class="btn btn-whatsapp btn-lg"
+               aria-label="Order via WhatsApp">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.836L.057 23.857a.5.5 0 0 0 .609.61l6.102-1.498A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.007-1.373l-.359-.214-3.72.913.944-3.638-.234-.374A9.778 9.778 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+              </svg>
+              WhatsApp Order
+            </a>
+          </div>
         </div>
 
-        <div class="hero-ctas">
-          <a href="#" id="hero-call-btn" class="btn btn-primary btn-lg"
-             aria-label="Call The Pizza Shop">
-            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z"/>
+        <!-- RIGHT — Visual -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="pizza-stage">
+            <span class="stage-glow"></span>
+
+            <svg class="orbit-ring" viewBox="0 0 520 520">
+              <defs>
+                <path id="orbit-path" d="M260,260 m-238,0 a238,238 0 1,1 476,0 a238,238 0 1,1 -476,0"/>
+              </defs>
+              <circle cx="260" cy="260" r="207" fill="none" stroke="rgba(230,57,70,0.28)" stroke-width="1.5" stroke-dasharray="2 10" stroke-linecap="round"/>
+              <text class="orbit-text">
+                <textPath href="#orbit-path" textLength="1490" lengthAdjust="spacingAndGlyphs">STONE-BAKED ✦ FRESH DAILY ✦ 100% CHEESE ✦ MADE WITH LOVE ✦ STONE-BAKED ✦ FRESH DAILY ✦ 100% CHEESE ✦ MADE WITH LOVE ✦&#160;</textPath>
+              </text>
             </svg>
-            Call Now
-          </a>
-          <a href="#" id="hero-wa-btn" class="btn btn-whatsapp btn-lg"
-             aria-label="Order via WhatsApp">
-            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-              <path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.836L.057 23.857a.5.5 0 0 0 .609.61l6.102-1.498A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.007-1.373l-.359-.214-3.72.913.944-3.638-.234-.374A9.778 9.778 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
-            </svg>
-            WhatsApp Order
-          </a>
+
+            <div class="hero-pizza-wrap">
+              <img src="assets/hero-pizza.png" alt="" width="520" height="520"
+                   class="hero-pizza-img" loading="eager" decoding="async"/>
+            </div>
+
+            <div class="float-card fc-1">
+              <span class="fc-emoji">🔥</span>
+              <span class="fc-text"><strong>Stone-Baked</strong><small>Crispy smoky crust</small></span>
+            </div>
+            <div class="float-card fc-2">
+              <span class="fc-emoji">🧀</span>
+              <span class="fc-text"><strong>Loaded Cheese</strong><small>100% mozzarella</small></span>
+            </div>
+            <div class="float-card fc-3">
+              <span class="fc-emoji">⚡</span>
+              <span class="fc-text"><strong>Fresh &amp; Fast</strong><small>Made on order</small></span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="hero-wave" aria-hidden="true">
-        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--color-bg)"/>
-        </svg>
+      <!-- Bottom marquee band -->
+      <div class="hero-marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>🔥 Stone-Baked Crust</span><i>✦</i>
+          <span>🧀 100% Fresh Cheese</span><i>✦</i>
+          <span>🍅 Farm-Fresh Toppings</span><i>✦</i>
+          <span>⚡ Made Fresh On Order</span><i>✦</i>
+          <span>❤️ Faridabad's Favourite</span><i>✦</i>
+          <span>🔥 Stone-Baked Crust</span><i>✦</i>
+          <span>🧀 100% Fresh Cheese</span><i>✦</i>
+          <span>🍅 Farm-Fresh Toppings</span><i>✦</i>
+          <span>⚡ Made Fresh On Order</span><i>✦</i>
+          <span>❤️ Faridabad's Favourite</span><i>✦</i>
+        </div>
       </div>
     </section>
 
